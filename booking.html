@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/cinema_user2.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="css/login.css"> -->
+  <script src="js/booking.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container ">
+      <div class="navbar flex1">
+        <a class="logo" href="#">
+
+          <img src="./image/movie/logo2-removebg-preview.png" alt="">
+        </a>
+
+        <nav>
+          <ul id="menuitem">
+            <li><a href="design.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="cinemalist.html">Tv Shows</a></li>
+
+            <li><a href="booking.html">My Booking</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+        <div class="subscribe flex">
+          <i class="fas fa-search"></i>
+          <i id="palybtn" class="fas fa-user"></i>
+          <a id="dombtn"></a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+  <div id="user_info"></div>
+   <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+          <img src="./image/movie/logo2-removebg-preview.png">
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>Tv Shows</li>
+            <li>Actors</li>
+            <li>Celebrity</li>
+          </ul>
+          <ul class="ul">
+            <li>Movie</li>
+            <li>Video</li>
+            <li>Basketball</li>
+            <li>Coress</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+        <div class="img flex1">
+          <img src="./image/movie/app1.png" alt="">
+          <img src="./image/movie/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2025 Copyright Holder All Rights Reserved | This template is made By <i
+        class="fas fa-heart"></i> prince</p>
+  </footer>
+</body>
+
+</html>

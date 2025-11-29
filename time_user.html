@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/date_user.css"> -->
+  <link rel="stylesheet" href="css/cinema_user2.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+<body>
+
+ <section id="movie_info" class="poster">
+        
+    </section>
+    <section class="sinfo">
+    <div id="moviedetail"></div>
+   <h2>Time</h2>
+     <div id="show_data"></div>
+
+  </section>
+    <!-- <div class="container1">
+     
+    </div> -->
+     
+     
+        
+  
+        <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+      <!-- <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>REBUNEKA THE DOLL</h1>
+
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>1hrs 50mins</span>
+              <i class="fas fa-circle"></i>
+              <p>2021</p>
+              <i class="fas fa-circle"></i>
+              <button>Action</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+      <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+     
+       
+        
+    </div>
+
+    <footer>
+    <div class="container mtop">
+      <div class="box">
+        <a class="logo" href="design.html">
+          <img src="./image/movie/logo2-removebg-preview.png">
+        </a>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>Tv Shows</li>
+            <li>Actors</li>
+            <li>Celebrity</li>
+          </ul>
+          <ul class="ul">
+            <li>Movie</li>
+            <li>Video</li>
+            <li>Basketball</li>
+            <li>Coress</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+        <div class="img flex1">
+          <img src="./image/movie/app1.png" alt="">
+          <img src="./image/movie/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2025 Copyright Holder All Rights Reserved | This template is made By <i
+        class="fas fa-heart"></i> prince</p>
+  </footer>
+    <script src="js/time_user.js"></script>
+    <script src="js/date_user.js"></script>
+</body>
+</html>

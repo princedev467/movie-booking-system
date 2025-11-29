@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login Page</h2>
+
+ 
+        <form id="login">
+            <div class="input-group">
+                <label for="username">Email</label><br>
+                <input type="email" id="email" name="username" placeholder="Enter your email">
+                <div id="error"></div>
+            </div>
+            <br><br>
+
+            <div class="input-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <div id="error2"></div>
+            </div>
+            <br><br>
+
+            <button class="btn" id="submit" type="submit">Login</button>
+
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+    </div>
+
+    <script src="js/login.js" defer></script>
+</body>
+
+</html>
